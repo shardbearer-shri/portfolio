@@ -43,7 +43,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* general styles */
 
 body {
@@ -60,7 +59,6 @@ img {
   display: block;
   max-width: 100%;
 }
-
 
 /* UTILITY */
 
@@ -178,10 +176,11 @@ img {
 
 .hamburger {
   visibility: hidden;
-  width: 100%;
+  width: fit-content;
   position: fixed;
-  top: 90%;
-  right: 5%;
+  /* top: 8%; */
+  /* right: 1%; */
+  right: 0;
   z-index: 99;
   display: flex;
   justify-content: end;
@@ -190,19 +189,19 @@ img {
   transition: opacity 0.3s;
 }
 .hamburger-icon {
-  border-radius: 5px;
+  border-radius: 50%;
+  display: flex;
   background-color: rgb(10, 10, 10);
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem;
   color: white;
   border: none;
   transition: 0.3s;
   font-size: 2rem;
 }
 .hamburger-icon-hover {
-  background-color: aliceblue;
+  background-color: blue;
   color: black;
 }
-
 
 /* hero section */
 
@@ -277,7 +276,9 @@ img {
 
 .work__title--cont {
   margin-left: 0;
-  align-self: center;
+  /* align-self: center; */
+  /* align-items: flex-start; */
+  /* justify-content: start; */
   max-width: 50%;
   min-height: 80vh;
 }
@@ -306,12 +307,12 @@ img {
   color: white;
   border-radius: 30px;
   padding: 1rem;
-}
-.project-box {
-  box-shadow: none;
   max-width: 350px;
-  min-height: fit-content;
   margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 530.75px;
 }
 
 /* IMAGE CONTAINER PROJECT BOX */
@@ -323,6 +324,7 @@ img {
 .project__img img {
   max-height: 200px;
   border-radius: 8px;
+  min-height: 160px;
 }
 /* project box header */
 
@@ -332,6 +334,8 @@ img {
 .project__badges {
   justify-content: flex-start;
 }
+/* project text content */
+
 .tech__text--icon {
   margin-right: 0.1rem;
   position: relative;
@@ -371,7 +375,6 @@ img {
 .icon__internal {
   margin-right: 0.5rem;
 }
-
 
 /* ABOUT SECTION  */
 
@@ -431,10 +434,10 @@ img {
   max-height: 40px;
 }
 .about__tech--list {
- display: grid;
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
- text-align: justify;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  text-align: justify;
 }
 
 /* CONTACT SECTION */
@@ -508,8 +511,7 @@ img {
     padding: 1rem;
   }
   .work__title--cont {
-    min-width: 100vw;
-    margin: 0 auto;
+    min-width: 99vw;
     text-align: center;
   }
 
@@ -517,6 +519,9 @@ img {
     box-shadow: none;
     min-height: fit-content;
     margin: 1rem 2rem;
+  }
+  .project__box--about {
+    text-align: justify;
   }
   .swiper {
     max-width: 100vw;
@@ -649,6 +654,9 @@ img {
   .project__reflinks {
     justify-content: space-evenly;
   }
+  .contact-me {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 479px) {
   .bio-redirect {
@@ -669,6 +677,7 @@ img {
   }
   .project__link {
     padding-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
     font-size: 0.9rem;
   }
 }
