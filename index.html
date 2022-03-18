@@ -25,6 +25,7 @@
     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script> -->
     <script defer src="./assets/app/app.js"></script>
     <link rel="stylesheet" href="./assets/style/styles.css">
 
@@ -46,6 +47,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link btn">About</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link btn">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link btn">Contact</a></li>
+                    <li class="nav__item"><button class="btn dark-toggle-desk"><ion-icon name="contrast"></ion-icon></button></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +56,6 @@
         <button class="hamburger-icon">
             <ion-icon name="menu-outline"></ion-icon>
         </button>
-
     </div>
     <!-- HERO CONTAINER SECTION -->
     <div class="hero-container flex section-cont section-marker" id="home">
@@ -71,13 +72,14 @@
                 </div>
                 <!-- contact logos -->
                 <div class="contact-links flex">
-                    <a class="contact-icon flex  icon-hover" href="https://twitter.com/ShriShetty97">
+                    <a class="contact-icon flex  icon-hover dark-theme-toggle" href="https://twitter.com/ShriShetty97">
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a>
-                    <a class="contact-icon flex  icon-hover" href="https://github.com/shardbearer-shri">
+                    <a class="contact-icon flex  icon-hover dark-theme-toggle"
+                        href="https://github.com/shardbearer-shri">
                         <ion-icon name="logo-github"></ion-icon>
                     </a>
-                    <a class="contact-icon flex  icon-hover" href="#">
+                    <a class="contact-icon flex  icon-hover dark-theme-toggle" href="#">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
                 </div>
@@ -107,10 +109,11 @@
             <section class="container about__container">
                 <!-- GRID THIS IN REFACTORING -->
                 <div class="about__img flex">
-                    <img src="./assets/img/undraw_resume_re_hkth.svg" alt="picutre of a human face with files in the background">
+                    <img src="./assets/img/undraw_resume_re_hkth.svg"
+                        alt="picutre of a human face with files in the background">
                 </div>
                 <div class="about__info col-span-2">
-                    <h2 class="about__title">About Me</h2>
+                    <h2 class="about__title dark-theme-toggle">About Me</h2>
                     <div class="about__information">
                         <div class="about__info--bio margin-bot">
                             <p class="margin-bot about__text about__text--mobile1">Hi! 👋 I'm Shri, a 24-year-old
@@ -126,24 +129,32 @@
                             <!-- <p class="about__text about__text--mobile2">I am currently at a beginner level of React, and working on projects using modern frameworks.</p> -->
                         </div>
                         <div class="about__img--mobile">
-                            <img src="./assets/img/undraw_resume_re_hkth.svg" class="resume-img" alt="picutre of a human face with files in the background">
+                            <img src="./assets/img/undraw_resume_re_hkth.svg" class="resume-img"
+                                alt="picutre of a human face with files in the background">
                         </div>
                         <!-- <button class="btn btn-cta bio-redirect margin-bot">Read More</button> -->
                         <div class="about__info--tech">
-                            <h2 class="margin-bot about__info--title">My Tech Stack</h2>
+                            <h2 class="margin-bot about__info--title dark-theme-toggle">My Tech Stack</h2>
                             <ul class="about__tech--list">
-                                <li class="about__tech--item"><img src="./assets/img/html-5.svg" alt="html logo">HTML</li>
-                                <li class="about__tech--item"><img src="./assets/img/icons8-css3.svg" alt="css logo">CSS</li>
+                                <li class="about__tech--item"><img src="./assets/img/html-5.svg" alt="html logo">HTML
+                                </li>
+                                <li class="about__tech--item"><img src="./assets/img/icons8-css3.svg" alt="css logo">CSS
+                                </li>
                                 <li class="about__tech--item"><img src="./assets/img/bootstrap-5-1.svg"
                                         class="bootstrap" alt="bootstrap logo">Bootstrap</li>
-                                <li class="about__tech--item"><img src="./assets/img/icons8-sass.svg" alt="sass logo">Sass</li>
-                                <li class="about__tech--item"><img src="./assets/img/javascript.svg" alt="javascript logo">JavaScript
+                                <li class="about__tech--item"><img src="./assets/img/icons8-sass.svg"
+                                        alt="sass logo">Sass</li>
+                                <li class="about__tech--item"><img src="./assets/img/javascript.svg"
+                                        alt="javascript logo">JavaScript
                                 </li>
                                 <li class="about__tech--item"><img src="./assets/img/git.svg" alt="git logo">Git</li>
-                                <li class="about__tech--item"><img src="./assets/img/github.svg" alt="github logo">GitHub</li>
-                                <li class="about__tech--item"><img src="./assets/img/figma_logo_icon.png" alt="figma logo">Figma
+                                <li class="about__tech--item"><img src="./assets/img/github.svg"
+                                        alt="github logo">GitHub</li>
+                                <li class="about__tech--item"><img src="./assets/img/figma_logo_icon.png"
+                                        alt="figma logo">Figma
                                 </li>
-                                <li class="about__tech--item"><img src="./assets/img/postman-png.png" alt="postman logo">Postman
+                                <li class="about__tech--item"><img src="./assets/img/postman-png.png"
+                                        alt="postman logo">Postman
                                 </li>
                                 <!-- <li class="about__tech--item"><img src="./assets/img/icons8-react.svg" alt="">React</li> -->
                                 <!-- <li class="about__tech--item"><img src="./assets/img/notion-svg.svg" alt="">Notion</li> -->
@@ -159,7 +170,7 @@
                 <section class="work__container container swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="work__title--cont flex-col col-span-3  box-slide">
-                            <h2 class="work__title">My Work.</h2>
+                            <h2 class="work__title dark-theme-toggle">My Work.</h2>
                             <h3 class="work__subtitle">A selection of my range of work</h3>
 
                         </div>
@@ -167,7 +178,8 @@
                     <div class="swiper-slide">
                         <div class="project-box project-box-grid-span-2 icon-hover box-slide">
                             <div class="project__img flex margin-bot"><img
-                                    src="./assets/img/project-thumb/FEM-pricing-template.png" alt="thumbnail of pricing template project">
+                                    src="./assets/img/project-thumb/FEM-pricing-template.png"
+                                    alt="thumbnail of pricing template project">
                             </div>
                             <div class="margin-bot">
                                 <h2 class="project__title">Pricing Panel
@@ -188,7 +200,7 @@
                                 </p>
                             </div>
                             <div>
-                                <p class="project__box--tech"><span class="tech__text--icon">
+                                <p class="project__box--tech dark-theme-toggle"><span class="tech__text--icon">
                                         <ion-icon name="rocket"></ion-icon>
                                     </span>Technologies Used</p>
                             </div>
@@ -203,7 +215,8 @@
                                     <ion-icon name="logo-javascript"></ion-icon>
                                 </li>
                                 <li class="project__item flex">
-                                    <img src="./assets/img/figma_logo_icon.png" class="project__item--logo" alt="figma log">
+                                    <img src="./assets/img/figma_logo_icon.png" class="project__item--logo"
+                                        alt="figma log">
                                 </li>
                             </ul>
                             <div class="project__reflinks flex">
@@ -231,7 +244,8 @@
                     <div class="swiper-slide">
                         <div class="project-box project-box-grid-span-2  icon-hover box-slide">
                             <div class="project__img flex margin-bot"><img
-                                    src="./assets/img/project-thumb/multor-landing.png" alt="thumbnail of multor project"></div>
+                                    src="./assets/img/project-thumb/multor-landing.png"
+                                    alt="thumbnail of multor project"></div>
                             <div class="margin-bot">
                                 <h2 class="project__title">Multor Landing Page
                                     <div class="project__badges flex">
@@ -249,7 +263,7 @@
                                     functional appointment query/boooking form setup.</p>
                             </div>
                             <div class="">
-                                <p class="project__box--tech"><span class="tech__text--icon">
+                                <p class="project__box--tech dark-theme-toggle"><span class="tech__text--icon">
                                         <ion-icon name="rocket"></ion-icon>
                                     </span>Technologies Used</p>
                             </div>
@@ -290,7 +304,8 @@
                     <div class="swiper-slide">
                         <div class=" project-box project-box-grid-span-2  icon-hover box-slide">
                             <div class="project__img flex margin-bot"><img
-                                    src="./assets/img/project-thumb/recipe-json.png" alt="thumbnail of recipe page project"></div>
+                                    src="./assets/img/project-thumb/recipe-json.png"
+                                    alt="thumbnail of recipe page project"></div>
                             <div class="margin-bot">
                                 <h2 class="project__title">Simple House Restaurant
                                     <div class="project__badges flex">
@@ -308,7 +323,7 @@
                                     user interaction.</p>
                             </div>
                             <div>
-                                <p class="project__box--tech"><span class="tech__text--icon">
+                                <p class="project__box--tech dark-theme-toggle"><span class="tech__text--icon">
                                         <ion-icon name="rocket"></ion-icon>
                                     </span>Technologies Used</p>
                             </div>
@@ -323,7 +338,8 @@
                                     <ion-icon name="logo-javascript"></ion-icon>
                                 </li>
                                 <li class="project__item flex">
-                                    <img src="./assets/img/axios_logo_icon.png" class="project__item--logo" alt="axios logo">
+                                    <img src="./assets/img/axios_logo_icon.png" class="project__item--logo"
+                                        alt="axios logo">
                                 </li>
                             </ul>
                             <div class="project__reflinks flex">
@@ -352,7 +368,8 @@
                     <div class="swiper-slide">
                         <div class="project-box project-box-grid-span-2 icon-hover box-slide">
                             <div class="project__img flex margin-bot"><img
-                                    src="./assets/img/project-thumb/documentation-page.png" alt="documentation page thumbnail">
+                                    src="./assets/img/project-thumb/documentation-page.png"
+                                    alt="documentation page thumbnail">
                             </div>
                             <div class="margin-bot">
                                 <h2 class="project__title">Documentation Page
@@ -370,7 +387,7 @@
                                 </p>
                             </div>
                             <div>
-                                <p class="project__box--tech"><span class="tech__text--icon">
+                                <p class="project__box--tech dark-theme-toggle"><span class="tech__text--icon">
                                         <ion-icon name="rocket"></ion-icon>
                                     </span>Technologies Used</p>
                             </div>
@@ -417,13 +434,15 @@
     </main>
     <footer class="section-marker" id="contact">
         <div class="form-section container">
-            <h2 class="form__sect--title">Contact me!</h2>
+            <h2 class="form__sect--title dark-theme-toggle">Contact me!</h2>
             <div class="form__sect--items">
                 <div class="form__img">
                     <p> Want to connect? My inbox is always open!</p>
                     <div class="contact-redirect col-span-3">
-                        <a href="mailto:shri.shetty33@gmail.com" target="_blank" class="mail__link">
-                            <span class="badge"><ion-icon name="mail"></ion-icon> &nbsp;mail</span> shri.shetty33@gmail.com
+                        <a href="mailto:shri.shetty33@gmail.com" target="_blank" class="mail__link dark-theme-toggle">
+                            <span class="badge">
+                                <ion-icon name="mail"></ion-icon> &nbsp;mail
+                            </span> shri.shetty33@gmail.com
                         </a>
                     </div>
                     <div class="form__img--container">
@@ -442,7 +461,8 @@
                         </div>
                         <label for="message">Message</label>
                         <textarea name="message" id="" cols="30" rows="10"></textarea>
-                        <button type="submit" class="btn btn-cta form-btn">Submit &nbsp;<ion-icon name="send"></ion-icon></button>
+                        <button type="submit" class="btn btn-cta form-btn">Submit &nbsp;<ion-icon name="send">
+                            </ion-icon></button>
                     </form>
                 </div>
             </div>
@@ -451,30 +471,30 @@
             <div class="flex container contact-container">
                 <section class="social__list flex col-span-3">
                     <!-- GIT HUB ICON HERE -->
-                    <a class="contact__link contact__icon flex" href="https://github.com/shardbearer-shri">
+                    <a class="contact__link contact__icon flex dark-theme-toggle" href="https://github.com/shardbearer-shri">
                         <ion-icon name="logo-github"></ion-icon>
                     </a>
 
                     <!-- twitter ICON HERE -->
-                    <a class="contact__link flex contact__icon" href="https://twitter.com/ShriShetty97">
+                    <a class="contact__link flex contact__icon dark-theme-toggle" href="https://twitter.com/ShriShetty97">
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a>
 
                     <!-- linkedin ICON HERE -->
-                    <a class="contact__link contact__icon flex" href="#">
+                    <a class="contact__link contact__icon flex dark-theme-toggle" href="#">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
                 </section>
                 <section class="credit flex-col col-span-3">
                     <p>Made with</p>
                     <ul class="credit__nav flex">
-                        <li class="nav__icon flex">
+                        <li class="nav__icon flex dark-theme-toggle">
                             <ion-icon name="logo-html5"></ion-icon>
                         </li>
-                        <li class="nav__icon flex">
+                        <li class="nav__icon flex dark-theme-toggle">
                             <ion-icon name="logo-css3"></ion-icon>
                         </li>
-                        <li class="nav__icon flex">
+                        <li class="nav__icon flex dark-theme-toggle">
                             <ion-icon name="logo-javascript"></ion-icon>
                         </li>
                     </ul>

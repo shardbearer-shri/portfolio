@@ -47,6 +47,7 @@ html {
 
 body {
   font-family: var(--ff-primary);
+  transition: background-color 0.5s;
 }
 
 a,
@@ -549,9 +550,73 @@ img {
 .about__img--mobile {
   display: none;
 }
+/* dark mode css*/
+.dark-toggle-desk {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+.dark-toggle-desk:hover {
+  cursor: pointer;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+.dark-toggle-dark {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.dark-clr-toggle {
+  color: var(--clr-light);
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 950px) {
+  .navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    transform: translateX(-1000px);
+    transition: transform 0.4s;
+    position: fixed;
+    z-index: 9999;
+  }
+  .hamburger {
+    visibility: visible;
+    opacity: 1;
+  }
+  .hamTog {
+    transform: translateX(0px);
+  }
+  .nav-container {
+    position: absolute;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+    margin: auto;
+    background-color: blue;
+    width: 70vw;
+    align-items: flex-start;
+    padding-left: 2rem;
+    color: white;
+  }
+  .nav__list {
+    flex-direction: column;
+    margin: 2rem 0rem;
+    align-items: flex-start;
+  }
+  .nav__item {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+  .nav__link {
+    color: white;
+  }
   .hero-section {
     flex-direction: column;
     margin-top: 4rem;
@@ -656,46 +721,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .navigation {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    transform: translateX(-500px);
-    transition: transform 0.4s;
-    position: fixed;
-    z-index: 9999;
-  }
-  .hamburger {
-    visibility: visible;
-    opacity: 1;
-  }
-  .hamTog {
-    transform: translateX(0px);
-  }
-  .nav-container {
-    position: absolute;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-around;
-    margin: auto;
-    background-color: blue;
-    width: 70vw;
-    align-items: flex-start;
-    padding-left: 2rem;
-    color: white;
-  }
-  .nav__list {
-    flex-direction: column;
-    margin: 2rem 0rem;
-    align-items: flex-start;
-  }
-  .nav__item {
-    margin: 1rem 0rem;
-    width: 100%;
-  }
-  .nav__link {
-    color: white;
-  }
+  
   .about__info--bio {
     grid-column: span 4;
   }

@@ -52,3 +52,27 @@ function highLight() {
   });
 }
 window.addEventListener("scroll", highLight);
+
+// dark mode
+
+const darkToggle = document.querySelector(".dark-toggle-desk");
+
+const allText = document.querySelectorAll(".dark-theme-toggle");
+const projectIcons = document.querySelectorAll(".project__item");
+const techStack = document.querySelectorAll(".about__tech--item");
+
+darkToggle.addEventListener("click", (e) => {
+  darkToggle.classList.toggle("dark-toggle-dark");
+  // const darkIstrue = darkToggle.classList.contains("dark-toggle-dark");
+  document.body.classList.toggle("dark-toggle-dark");
+
+  allText.forEach((ele) => {
+    ele.classList.toggle("dark-clr-toggle");
+  });
+  projectIcons.forEach((ele) => {
+    ele.classList.toggle("dark-clr-toggle");
+  });
+  techStack.forEach((ele) => {
+    ele.classList.toggle("dark-clr-toggle");
+  });
+});
