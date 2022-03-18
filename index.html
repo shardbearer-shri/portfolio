@@ -57,7 +57,7 @@
 
     </div>
     <!-- HERO CONTAINER SECTION -->
-    <div class="hero-container flex section-cont" id="home">
+    <div class="hero-container flex section-cont section-marker" id="home">
         <section class="hero-section flex container">
             <div class="hero__details item">
                 <div>
@@ -103,7 +103,7 @@
         </section>
     </div><!-- END OF HERO SECTION-->
     <main>
-        <div class="about-section section-cont flex" id="about">
+        <div class="about-section section-cont flex section-marker" id="about">
             <section class="container about__container">
                 <!-- GRID THIS IN REFACTORING -->
                 <div class="about__img flex">
@@ -154,7 +154,7 @@
             </section>
         </div>
         <!-- WORK SECTION -->
-        <div class="work-section section-cont flex-col" id="work">
+        <div class="work-section section-cont flex-col section-marker" id="work">
             <div class="swiper">
                 <section class="work__container container swiper-wrapper">
                     <div class="swiper-slide">
@@ -415,43 +415,71 @@
             </div>
         </div>
     </main>
-    <footer class="contact-info" id="contact">
-        <div class="flex container contact-container">
-            <section class="social__list flex col-span-3">
-                <!-- GIT HUB ICON HERE -->
-                <a class="contact__link contact__icon flex" href="https://github.com/shardbearer-shri">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-
-                <!-- twitter ICON HERE -->
-                <a class="contact__link flex contact__icon" href="https://twitter.com/ShriShetty97">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-
-                <!-- linkedin ICON HERE -->
-                <a class="contact__link contact__icon flex" href="">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </section>
-            <div class="contact-redirect col-span-3">
-                <a href="" class="mail__link">
-                    <span class="badge">mail</span> shri.shetty33@gmail.com
-                </a>
+    <footer class="section-marker" id="contact">
+        <div class="form-section container">
+            <h2 class="form__sect--title">Contact me!</h2>
+            <div class="form__sect--items">
+                <div class="form__img">
+                    <p> Want to connect? My inbox is always open!</p>
+                    <div class="contact-redirect col-span-3">
+                        <a href="mailto:shri.shetty33@gmail.com" target="_blank" class="mail__link">
+                            <span class="badge"><ion-icon name="mail"></ion-icon> &nbsp;mail</span> shri.shetty33@gmail.com
+                        </a>
+                    </div>
+                    <div class="form__img--container">
+                        <img src="./assets/img/undraw_envelope_re_f5j4.svg" alt="">
+                    </div>
+                </div>
+                <div class="form__details">
+                    <form action="https://formsubmit.co/shri.shetty33@gmail.com" class="form__section--form"
+                        method="POST">
+                        <input type="hidden" name="_captcha" value="true">
+                        <div class="form-group">
+                            <label for="username">Name</label>
+                            <input type="text" name="username" required placeholder="Enter your name">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="" required placeholder="Enter your email">
+                        </div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn btn-cta form-btn">Submit &nbsp;<ion-icon name="send"></ion-icon></button>
+                    </form>
+                </div>
             </div>
-            <section class="credit flex-col col-span-3">
-                <p>Made with</p>
-                <ul class="credit__nav flex">
-                    <li class="nav__icon flex">
-                        <ion-icon name="logo-html5"></ion-icon>
-                    </li>
-                    <li class="nav__icon flex">
-                        <ion-icon name="logo-css3"></ion-icon>
-                    </li>
-                    <li class="nav__icon flex">
-                        <ion-icon name="logo-javascript"></ion-icon>
-                    </li>
-                </ul>
-            </section>
+        </div>
+        <div class="contact-info">
+            <div class="flex container contact-container">
+                <section class="social__list flex col-span-3">
+                    <!-- GIT HUB ICON HERE -->
+                    <a class="contact__link contact__icon flex" href="https://github.com/shardbearer-shri">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+
+                    <!-- twitter ICON HERE -->
+                    <a class="contact__link flex contact__icon" href="https://twitter.com/ShriShetty97">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+
+                    <!-- linkedin ICON HERE -->
+                    <a class="contact__link contact__icon flex" href="">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </section>
+                <section class="credit flex-col col-span-3">
+                    <p>Made with</p>
+                    <ul class="credit__nav flex">
+                        <li class="nav__icon flex">
+                            <ion-icon name="logo-html5"></ion-icon>
+                        </li>
+                        <li class="nav__icon flex">
+                            <ion-icon name="logo-css3"></ion-icon>
+                        </li>
+                        <li class="nav__icon flex">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </footer>
 </body>

@@ -4,11 +4,14 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  // mousewheel: true,
+  keyboard: true,
 });
 
 // navbar toggle
@@ -27,3 +30,25 @@ allNavLink.forEach((ele) => {
     hamBtn.classList.toggle("hamburger-icon-hover");
   });
 });
+
+// navbar highlight
+const sections = document.querySelectorAll(".section-marker");
+function highLight() {
+  let scrollY = window.scrollY;
+
+  sections.forEach((ele, ind) => {
+    const sectionHeight = ele.offsetHeight;
+    const sectionTop = ele.offsetTop - 100;
+    let inde = ele.getAttribute("id");
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".navigation a[href*=" + inde + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".navigation a[href*=" + inde + "]")
+        .classList.remove("active");
+    }
+  });
+}
+window.addEventListener("scroll", highLight);
