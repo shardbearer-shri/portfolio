@@ -247,6 +247,9 @@ img {
 .button-container {
   justify-content: flex-start;
 }
+#contact-me-cta {
+background-color: black;
+}
 .contact-me {
   font-size: 1.2rem;
   padding: 0.3rem 1.5rem;
@@ -558,7 +561,7 @@ img {
   background-color: var(--clr-light);
   color: var(--clr-dark);
   padding: 0.5rem 1.5rem;
-  margin: 1rem;
+  margin: 0rem 1rem;
   transition: all 0.3s;
 }
 .dark-toggle-desk:hover {
