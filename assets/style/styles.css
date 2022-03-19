@@ -258,7 +258,9 @@ background-color: black;
 .icon-div {
   margin-right: 0.3rem;
 }
-
+ion-icon {
+  pointer-events: none;
+}
 /* WORK SECTION */
 
 .work__container {
